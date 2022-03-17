@@ -1,25 +1,25 @@
 package com.corejava;
 
-public class Firstjava {
+import java.util.*;
 
-	public static void main(String[] args) {
-		int x=10;
-		switch(x) {
-		case 0:
-			System.out.println(0);
-			break;
-			
-		case 1:
-			System.out.println(1);
-		case 2:
-			System.out.println(2);
-		default:
-			System.out.println("Default statement");
-		}
+public class Firstjava {
+	
+	public static int  calculateSum(int a, int b) {
+		int sum = a + b;
+		return sum;
+	}
+	
+	
+	
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
 		
-		
+		int sum = calculateSum(a,b);
+		System.out.print("Sum of 2 number is "+ sum);
 		
 		
 	}
+	}
 
-}
