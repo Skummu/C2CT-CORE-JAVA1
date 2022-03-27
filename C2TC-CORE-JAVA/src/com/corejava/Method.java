@@ -1,25 +1,22 @@
 package com.corejava;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Method {
-	
-	public static int calculateSum(int a, int b) { // Name of Function
-		int sum = a + b;
-		return sum;
+	public static void printAverage(int a, int b, int c) {
+		int average = (a + b + c)/3;
+		System.out.println("The Average of 3 number is"+ average);
+		
 		
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
 		int b = sc.nextInt();
+		int c = sc.nextInt();
 		
-		int sum = calculateSum(a, b); // Call the Function
-		System.out.print("The sum of 2 number is "+ sum);
+		printAverage(a, b, c);
+		
 		
 	}
-
 }

@@ -3,23 +3,20 @@ package com.corejava;
 import java.util.*;
 
 public class Firstjava {
-	
-	public static int  calculateSum(int a, int b) {
-		int sum = a + b;
-		return sum;
-	}
-	
-	
-	
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		
-		int sum = calculateSum(a,b);
-		System.out.print("Sum of 2 number is "+ sum);
-		
-		
+		int button = sc.nextInt();
+		if(button==1) {
+			System.out.print("Hello");
+		}else if(button==2) {
+			System.out.print("Hii");
+		}else if(button==3) {
+			System.out.print("Salam");
+		}else {
+			System.out.print("Invalid Button");
+		}
+	
 	}
+	
 	}
 
